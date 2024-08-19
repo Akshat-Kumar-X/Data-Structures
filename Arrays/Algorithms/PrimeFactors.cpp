@@ -1,9 +1,10 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
+using namespace std;
 
 void primeFactors(int n) {
-    std::vector<int> factors;
+    vector<int> factors;
 
     // Check for number of 2s
     while (n % 2 == 0) {
@@ -26,17 +27,17 @@ void primeFactors(int n) {
 
     // Print the factors
     for (int factor : factors) {
-        std::cout << factor << " ";
+        cout << factor << " ";
     }
-    std::cout << std::endl;
+    cout << std::endl;
 }
 
 int main() {
     int n;
-    std::cout << "Enter a number: ";
-    std::cin >> n;
+    cout << "Enter a number: ";
+    cin >> n;
 
-    std::cout << "Prime factors of " << n << " are: ";
+    cout << "Prime factors of " << n << " are: ";
     primeFactors(n);
 
     return 0;
