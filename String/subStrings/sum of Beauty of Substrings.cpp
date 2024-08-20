@@ -34,7 +34,7 @@ public:
 
 int main() {
     Solution solution;
-    string s = "aabcbaa";
+    string s = "aabcbaa"; // aab aabc aabcb aabcba aabcbaa abcb abcba a...
     int result = solution.beautySum(s);
     cout << "The sum of beauty of all substrings is: " << result << endl;
     return 0;
