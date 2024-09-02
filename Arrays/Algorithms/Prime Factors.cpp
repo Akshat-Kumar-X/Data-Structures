@@ -6,14 +6,8 @@ using namespace std;
 void primeFactors(int n) {
     vector<int> factors;
 
-    // Check for number of 2s
-    while (n % 2 == 0) {
-        factors.push_back(2);
-        n /= 2;
-    }
-
     // Check for odd factors up to sqrt(n)
-    for (int i = 3; i <= sqrt(n); i += 2) {
+    for (int i = 2; i <= sqrt(n); i += 2) {
         while (n % i == 0) {
             factors.push_back(i);
             n /= i;
@@ -21,7 +15,7 @@ void primeFactors(int n) {
     }
 
     // If n is a prime number greater than 2
-    if (n > 2) {
+    if (n > 1) {
         factors.push_back(n);
     }
 
