@@ -9,11 +9,11 @@ public:
 
     double pow(double x, long long n) { //O(logN)
         if (n == 0) return 1;
+        int y = pow(x, n/2);
         if ( n % 2 == 0 ) {
-            int y = pow(x, n/2);
             return y * y;
         } else {
-            return x * pow(x, n-1);
+            return x * y * y;
         }
     }
     
