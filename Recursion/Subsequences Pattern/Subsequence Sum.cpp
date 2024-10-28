@@ -8,7 +8,7 @@ bool helper(int index, int sum, int target, vector<int>& nums) {
     if (helper(index + 1, sum + nums[index], target, nums)) return true;
     if (helper(index + 1, sum + 0, target, nums)) return true;
 
-    return false;
+    return false; 
 }
 
 bool subSequenceSum(vector<int>& nums, int target) {
