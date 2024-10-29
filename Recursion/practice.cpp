@@ -3,10 +3,12 @@ using namespace std;
 
 
 int foo (int num, int n) {
+    if (n < 1) return 1;
     int y = foo(num, n/2);
     if (n%2 == 0) {
-        return 
+        return y * y;
     }
+    return num * y * y;
 }
 
 int main() {
