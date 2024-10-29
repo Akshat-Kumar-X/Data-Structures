@@ -20,8 +20,10 @@ public:
             return;
         }
         for (int i = index; i < n; i++) {
+            
             if (isPalindrome(index, i, s)) {
                 string prefix = s.substr(index, i - index + 1);
+
                 temp.push_back(prefix);
                 helper(i + 1, s, temp, ans);
                 temp.pop_back();
