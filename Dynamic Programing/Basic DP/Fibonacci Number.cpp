@@ -36,7 +36,7 @@ int fibo(int n) {
 
 // Space Optimized (Bottom-Up Approach with Constant Space)
 int fibo(int n) {
-    if (n <= 1)
+    if (n <= 1) 
         return n;
 
     int prev1 = 0, prev2 = 1;
