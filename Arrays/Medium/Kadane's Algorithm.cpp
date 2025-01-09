@@ -25,3 +25,6 @@ public:
         return {maxx, {start, end}};
     }
 };
+
+// Time: O(N)
+// Space: O(1)

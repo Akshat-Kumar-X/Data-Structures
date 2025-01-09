@@ -21,3 +21,6 @@ public:
         return num;
     }
 };
+
+// Time: O(N)
+// Space: O(1)
