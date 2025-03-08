@@ -16,7 +16,16 @@ void DFS(int node, vector<int>& vis, vector<int>& result, vector<vector<int>>& a
 }
 
 int main() {
-    vector<vector<int>> adj; // Given
+    int n, m;
+    cin >> n >> m;
+
+    vector<vector<int>> adj(n);
+    for (int i=0; i<m; i++) {
+        int u, v;
+        cin >> u >> v;
+        adj[u].push_back(v);
+        adj[v].push_back(u);
+    }
 
     int n = adj.size();
     vector<int> vis(n, 0);
