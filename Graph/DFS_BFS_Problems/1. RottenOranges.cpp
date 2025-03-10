@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// BFS Approach 
+// Time: O(V + E)
+
 int orangesRotting(vector<vector<int>>& grid) {
     int n = grid.size();
     int m = grid[0].size();
