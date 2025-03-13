@@ -1,6 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// BFS Approach 
+// Time: O(N × M)
+// Space: O(N × M)
+
+// Pusing All Zeros to Queue and then pushing their adjacent Nodes while also updating their distances
+
 vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
 
     int n = mat.size();

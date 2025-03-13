@@ -2,7 +2,8 @@
 using namespace std;
 
 // BFS Approach 
-// Time: O(V + E)
+// Time: O(M * N)
+// Space: O(M * N)
 
 vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {
     int n = image.size();
