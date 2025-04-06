@@ -2,6 +2,8 @@
 using namespace std;
 
 // Recursion (Top-Down -> Breaking problem into smaller Sub-problems)
+// Time: O(2^N)
+// Space: O(N)
 int fibo(int n) {
     if (n <= 1)
         return n;
@@ -10,6 +12,8 @@ int fibo(int n) {
 }
 
 // Memoization for Overlapping Sub-problems (Top-Down Approach)
+// Time: O(N)
+// Space: O(N)
 int fibo(int n, vector<int>& memo) {
     if (n <= 1)
         return n;
