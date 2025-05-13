@@ -2,6 +2,8 @@
 using namespace std;
 
 
+
+// for SubSequences simply use take and not Take in recursion
 void printSequence( string s, int index, string str, vector<string>& ans) {
     if (index == str.size()) {
         ans.push_back(s);
